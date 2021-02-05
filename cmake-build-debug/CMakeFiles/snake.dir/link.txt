@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/snake.dir/main.cpp.o CMakeFiles/snake.dir/FieldBase.cpp.o  -o snake 
