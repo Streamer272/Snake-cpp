@@ -1,8 +1,5 @@
-cmake-build-debug
-CMakeLists.txt
-src/main.exe
 .vscode
+cmake-build-debug
 a.exe
 a.out
-src/a.exe
-src/a.out
+CMakeLists.txt
