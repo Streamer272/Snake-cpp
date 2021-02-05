@@ -1,22 +1,17 @@
 #pragma once
 
-#include <iostream>
-
 using namespace std;
-
 
 class FieldBase {
 private:
     string empty_cell = " ";
     string wall_cell = "|";
     string floor_cell = "-";
-
-    bool field_init_done = false;
 public:
-    int field_size{};
+    int field_size;
     string field;
 
-    explicit FieldBase(int field_size);
+    FieldBase(int field_s);
     void field_init();
     void output_field() const;
 };
