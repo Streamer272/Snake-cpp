@@ -4,14 +4,14 @@ using namespace std;
 
 class FieldBase {
 private:
-    string empty_cell = " ";
+    string empty_cell = "w";
     string wall_cell = "|";
     string floor_cell = "-";
 public:
-    int field_size;
-    string field;
+    int field_width = 8;
+    int field_size = field_width*field_width;
+    string field[field_size] = {};
 
-    FieldBase(int field_s);
     void field_init();
     void output_field() const;
 };
