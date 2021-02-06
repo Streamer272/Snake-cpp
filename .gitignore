@@ -1,4 +1,5 @@
 .vscode
+.vs
 a.exe
 a.out
 src/a.exe
