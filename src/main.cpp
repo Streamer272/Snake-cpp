@@ -1,4 +1,5 @@
 #include <iostream>
+#include <thread>
 #include "FieldBase.cpp"
 #include "InputController.cpp"
 
@@ -14,8 +15,7 @@ int main() {
     //field.field_init();
     //field.output_field();
 
-    InputController ic;
-    ic.add_listener(s);
+    InputController::ask_input(s);
 
     return 0;
 }
