@@ -1,21 +1,22 @@
-//#pragma once
+#pragma once
 #include <iostream>
 #include <conio.h>
 #include "InputController.h"
 
 using namespace std;
 
-void Listener::listen(int (*callback)(char)) {
+
+void Listener::listen(void (*callback)(char)) {
     char key_press;
 
     while (keep_listening) {
         key_press = getch();
-        
+
         callback(key_press);
     }
 }
 
-void InputController::add_listener(int (*callback)(char)) {
+void InputController::add_listener(void (*callback)(char)) {
     if (listener != nullptr) {
         cerr << "Error: Listener aleady exists" << endl;
     }
