@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "FieldBase.h"
 
 using namespace std;
@@ -14,21 +15,23 @@ void FieldBase::field_init() {
     for (int i = 0; i < field_size; i++) {
         field[i] = stoch(empty_cell);
     }
-
-    cout << "init success";
 }
 
 void FieldBase::output_field() const {
-    cout << "starting output field" << endl;
+    for (int i = 0; i < field_width*1.1; i++) {
+        cout << floor_cell;
+    }
+    cout << endl;
 
-    if (field_size == 0) {
-        cout << "field is empty" << endl;
-        return;
+    for (int i = 0; i < field_height; i++) {
+        cout << wall_cell;
+        for (int x = 0; x < field_width; x++) {
+            cout << field[(field_width*i)+x];
+        }
+        cout << wall_cell << endl;
     }
 
-    for (int i = 0; i < field_size; i++) {
-        cout << field[i];
+    for (int i = 0; i < field_width*1.1; i++) {
+        cout << floor_cell;
     }
-
-    cout << "field outputed successfuly" << endl;
 }

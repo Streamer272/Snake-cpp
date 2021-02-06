@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/InputController.cpp
+iostream
+-
+curses.h
+-
+InputController.h
+/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/InputController.h
+
+/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/InputController.h
+

@@ -1,16 +1,20 @@
 #pragma once
+#include <iostream>
 
 using namespace std;
 
 class FieldBase {
 private:
-    string empty_cell = "w";
+    string empty_cell = " ";
     string wall_cell = "|";
     string floor_cell = "-";
+    string snake_cell = "@";
+    string tail_cell = "#";
 public:
-    int field_width = 8;
-    int field_size = field_width*field_width;
-    string field[field_size] = {};
+    int field_width = 16;
+    int field_height = 8;
+    int field_size = field_width*field_height;
+    string field[8*16] = {};
 
     void field_init();
     void output_field() const;
