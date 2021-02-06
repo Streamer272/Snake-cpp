@@ -2,16 +2,16 @@
 
 class Listener {
 public:
-    bool keep_listening = false;
-
-    void listen(void (*callback)(char));
+    const bool is_key_valid(int ascii);
+    void ask_input(void (*callback)(int ascii));
 };
 
 
 class InputController {
 private:
     Listener* listener = nullptr;
+    void* callback;
 public:
-    void add_listener(void (*callback)(char));
+    void add_listener(void (*callback)(int ascii));
     void remove_listener();
 };

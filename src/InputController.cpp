@@ -5,26 +5,33 @@
 
 using namespace std;
 
-
-void Listener::listen(void (*callback)(char)) {
-    char key_press;
-
-    while (keep_listening) {
-        key_press = getch();
-
-        callback(key_press);
+const bool Listener::is_key_valid(int ascii) {
+    if (ascii == 72 || ascii == 75 || ascii == 80 || ascii == 77) {
+        return true;
     }
+
+    return false;
 }
 
-void InputController::add_listener(void (*callback)(char)) {
+void Listener::ask_input(void (*callback)(int ascii)) {
+    char key_press;
+    int ascii;
+
+    do {
+        key_press = getch();
+        ascii = key_press;
+    } while (!is_key_valid(ascii));
+
+    callback(ascii);
+}
+
+void InputController::add_listener(void (*callback)(int)) {
     if (listener != nullptr) {
         cerr << "Error: Listener aleady exists" << endl;
     }
 
     Listener ls;
     listener = &ls;
-    listener->keep_listening = true;
-    listener->listen(callback);
 }
 
 void InputController::remove_listener() {
@@ -32,6 +39,5 @@ void InputController::remove_listener() {
         cerr << "Error: Cant remove non existing listener" << endl;
     }
 
-    listener->keep_listening = false;
     listener = nullptr;
 }

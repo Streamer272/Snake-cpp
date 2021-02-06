@@ -5,8 +5,8 @@
 using namespace std;
 
 
-void s(char c) {
-    cout << c << endl;
+void s(int ascii) {
+    cout << "Ascii: " << ascii << endl;
 }
 
 int main() {
@@ -14,9 +14,8 @@ int main() {
     //field.field_init();
     //field.output_field();
 
-    //InputController ic;
-    //ic.add_listener(s);
-    //cout << "thread done" << endl;
+    InputController ic;
+    ic.add_listener(s);
 
     return 0;
 }
