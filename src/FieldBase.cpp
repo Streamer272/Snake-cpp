@@ -9,6 +9,7 @@ FieldBase::FieldBase() {
     }
 
     field[snake_pos] = snake_cell;
+    srand(time(nullptr));
 }
 
 void FieldBase::output_field() const {
@@ -58,14 +59,31 @@ void FieldBase::move(int direction) {
 
     if (new_x_pos < 0 || new_x_pos > field_width || new_y_pos < 0 || new_y_pos > field_height) {
         clear();
-        cout << "GAME OVER" << endl;
+        cout << "GAME OVER WITH SCORE " << score << endl;
         system("pause");
         exit(0);
     }
 
     int new_pos = (new_y_pos*field_width) + new_x_pos;
+    if (field[new_pos] == apple_cell) {
+        score += 1;
+        apple_exists = false;
+    }
     field[snake_pos] = empty_cell;
     field[new_pos] = snake_cell;
     snake_pos = new_pos;
     m_direction = direction;
+}
+
+void FieldBase::generate_apple() {
+    if (!apple_exists) {
+        int random_num;
+
+        do {
+            random_num = 0 + rand() % ((field_size + 1) - 0);
+        } while (field[random_num] != empty_cell);
+
+        field[random_num] = apple_cell;
+        apple_exists = true;
+    }
 }
