@@ -56,6 +56,13 @@ void FieldBase::move(int direction) {
         new_y_pos = y_pos;
     }
 
+    if (new_x_pos < 0 || new_x_pos > field_width || new_y_pos < 0 || new_y_pos > field_height) {
+        clear();
+        cout << "GAME OVER" << endl;
+        system("pause");
+        exit(0);
+    }
+
     int new_pos = (new_y_pos*field_width) + new_x_pos;
     field[snake_pos] = empty_cell;
     field[new_pos] = snake_cell;

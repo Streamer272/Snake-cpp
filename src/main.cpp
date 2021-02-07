@@ -11,7 +11,7 @@ int main() {
     FieldBase field;
     while (true) {
         field.output_field();
-        sleep(1);
+        usleep(250000);
         cout << "ASK:";
         int direction = InputController::ask_input();
         field.move(direction);
