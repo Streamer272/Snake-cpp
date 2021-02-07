@@ -2,12 +2,13 @@
 
 using namespace std;
 
+
 FieldBase::FieldBase() {
     for (int i = 0; i < field_size; i++) {
         field[i] = stoch(empty_cell);
     }
 
-    field[((field_height/2)*field_width)+field_width/2] = snake_cell;
+    field[snake_pos] = snake_cell;
 }
 
 void FieldBase::output_field() const {
@@ -29,16 +30,35 @@ void FieldBase::output_field() const {
     }
 }
 
-void FieldBase::set_field(int index, string str) {
-    field[index] = str;
-}
+void FieldBase::move(int direction) {
+    int x_pos, y_pos;
+    x_pos = snake_pos % field_width;
+    y_pos = (snake_pos - x_pos) / field_width;
 
-void FieldBase::move(string direction) {
-    int current_pos;
-
-    for (int i = 0; i < field_size; i++) {
-        if (field[i] == snake_cell) {
-            current_pos = i;
-        }
+    int new_x_pos, new_y_pos;
+    if (direction == -1) {
+        direction = m_direction;
     }
+    if (direction == 0) {
+        new_x_pos = x_pos;
+        new_y_pos = y_pos - 1;
+    }
+    else if (direction == 1) {
+        new_x_pos = x_pos + 1;
+        new_y_pos = y_pos;
+    }
+    else if (direction == 2) {
+        new_x_pos = x_pos;
+        new_y_pos = y_pos + 1;
+    }
+    else if (direction == 3) {
+        new_x_pos = x_pos - 1;
+        new_y_pos = y_pos;
+    }
+
+    int new_pos = (new_y_pos*field_width) + new_x_pos;
+    field[snake_pos] = empty_cell;
+    field[new_pos] = snake_cell;
+    snake_pos = new_pos;
+    m_direction = direction;
 }

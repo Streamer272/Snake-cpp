@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 char stoch(string str) {
     char* char_arr;
     string str_obj(std::move(str));
@@ -10,5 +11,5 @@ char stoch(string str) {
 }
 
 void clear() {
-    system("clear");
+    system("cls");
 }

@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 class FieldBase {
 private:
     string empty_cell = " ";
@@ -10,6 +11,7 @@ private:
     string floor_cell = "-";
     string snake_cell = "@";
     string tail_cell = "#";
+    int m_direction = 3;
 public:
     int field_width = 16;
     int field_height = 8;
@@ -18,8 +20,9 @@ public:
 
     FieldBase();
     void output_field() const;
-    void set_field(int index, string str);
-    void move(string direction);
+    void move(int direction);
+private:
+    int snake_pos = ((field_height / 2) * field_width) + (field_width / 2);
 };
 
 #include "FieldBase.cpp"

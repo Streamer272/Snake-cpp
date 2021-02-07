@@ -3,6 +3,8 @@
 #include <windows.h>
 #include "KeyDefinition.h"
 
+using namespace std;
+
 
 class InputController {
 public:
