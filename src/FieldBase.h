@@ -1,8 +1,7 @@
 #pragma once
-#include <iostream>
+#include "InnerSystem.cpp"
 
 using namespace std;
-
 
 class FieldBase {
 private:
@@ -19,6 +18,8 @@ public:
 
     FieldBase();
     void output_field() const;
+    void set_field(int index, string str);
+    void move(string direction);
 };
 
 #include "FieldBase.cpp"

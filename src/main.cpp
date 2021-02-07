@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "FieldBase.h"
 #include "InputController.cpp"
 
