@@ -1,8 +1,6 @@
 #pragma once
 #include <iostream>
-#include "FieldBase.h"
 
-using namespace std;
 
 char stoch(string s) {
     char* char_arr;
@@ -11,7 +9,7 @@ char stoch(string s) {
     return *char_arr;
 }
 
-void FieldBase::field_init() {
+FieldBase::FieldBase() {
     for (int i = 0; i < field_size; i++) {
         field[i] = stoch(empty_cell);
     }

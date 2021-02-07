@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 class FieldBase {
 private:
     string empty_cell = " ";
@@ -16,6 +17,8 @@ public:
     int field_size = field_width*field_height;
     string field[8*16] = {};
 
-    void field_init();
+    FieldBase();
     void output_field() const;
 };
+
+#include "FieldBase.cpp"
