@@ -93,12 +93,12 @@ clean: CMakeFiles/Snake_cpp.dir/clean
 CMakeFiles/Snake_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake_cpp.dir\build.make CMakeFiles/Snake_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake_cpp.dir\build.make CMakeFiles/Snake_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Desktop\Coding\Else\C-family\C++\Projects\Snake-cpp\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Snake_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Desktop\Coding\Else\C-family\C++\Projects\Snake-cpp\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Snake_cpp"
 .PHONY : CMakeFiles/Snake_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Snake_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Desktop\Coding\Else\C-family\C++\Projects\Snake-cpp\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Desktop\Coding\Else\C-family\C++\Projects\Snake-cpp\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Snake_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Desktop\Coding\Else\C-family\C++\Projects\Snake-cpp\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Snake_cpp.dir/rule

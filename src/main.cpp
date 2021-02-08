@@ -15,15 +15,13 @@ void start() {
     field.generate_apple();
 
     while (field.playing) {
-        sleep(2);
         clear();
         field.render();
         usleep(250000);
-        int keyboard_input = InputController::ask_input();
-        field.move(keyboard_input);
-
+        field.move(InputController::ask_input());
     }
 
+    clear();
     cout << "GAME OVER WITH SCORE " << field.score << endl;
     system("pause");
 }
