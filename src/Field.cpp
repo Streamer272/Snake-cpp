@@ -32,10 +32,6 @@ void Field::render() const {
 }
 
 void Field::move(int direction) {
-    for (int tail_po : tail_pos) {
-        field[tail_po] = tail_cell;
-    }
-
     int x_pos, y_pos;
     x_pos = snake_pos % field_width;
     y_pos = (snake_pos - x_pos) / field_width;
@@ -62,22 +58,30 @@ void Field::move(int direction) {
     }
 
     int new_pos = (new_y_pos * field_width) + new_x_pos;
+    cout << endl << "New position created" << endl;
 
     if (new_x_pos < 0 || new_x_pos > (field_width - 1) || new_y_pos < 0 || new_y_pos > (field_height - 1)
             || field[new_pos] == tail_cell) {
         clear();
         playing = false;
     }
+    cout << "Border check passed" << endl;
 
     if (field[new_pos] == apple_cell) {
+        cout << "Apple hit" << endl;
         score += 1;
         generate_apple();
     }
+
+    /*for (int i = 0; i < score; i++) {
+        field[-i-1] = tail_cell;
+    }*/
 
     field[snake_pos] = empty_cell;
     field[new_pos] = snake_cell;
     snake_pos = new_pos;
     m_direction = direction;
+    cout << "Creation success" << endl;
 }
 
 void Field::generate_apple() {

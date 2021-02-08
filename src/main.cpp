@@ -15,10 +15,13 @@ void start() {
     field.generate_apple();
 
     while (field.playing) {
+        sleep(2);
         clear();
         field.render();
         usleep(250000);
-        field.move(InputController::ask_input());
+        int keyboard_input = InputController::ask_input();
+        field.move(keyboard_input);
+
     }
 
     cout << "GAME OVER WITH SCORE " << field.score << endl;
@@ -26,8 +29,8 @@ void start() {
 }
 
 
-[[noreturn]] int main() {
-    while (true) {
-        start();
-    }
+int main() {
+    start();
+
+    return 0;
 }
