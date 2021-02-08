@@ -85,9 +85,6 @@
 		<Unit filename="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/main.cpp">
 			<Option target="Snake_cpp"/>
 		</Unit>
-		<Unit filename="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/test.cpp">
-			<Option target="Snake_cpp"/>
-		</Unit>
 		<Unit filename="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
