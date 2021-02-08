@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/InputController.cpp" "/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/Snake_cpp.dir/src/InputController.cpp.o"
-  "/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/main.cpp" "/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/Snake_cpp.dir/src/main.cpp.o"
+  "D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/main.cpp" "D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/Snake_cpp.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

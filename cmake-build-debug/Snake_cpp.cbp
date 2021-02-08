@@ -8,92 +8,84 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
+				<Option working_dir="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
+				<Option working_dir="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Snake_cpp">
-				<Option output="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Snake_cpp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
+				<Option output="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Snake_cpp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Snake_cpp"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Snake_cpp"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Snake_cpp/fast">
-				<Option output="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Snake_cpp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
+				<Option output="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Snake_cpp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Snake_cpp/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Snake_cpp/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/InputController.cpp">
+		<Unit filename="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/main.cpp">
 			<Option target="Snake_cpp"/>
 		</Unit>
-		<Unit filename="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/InputController.h">
-			<Option target="Snake_cpp"/>
-		</Unit>
-		<Unit filename="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/src/main.cpp">
-			<Option target="Snake_cpp"/>
-		</Unit>
-		<Unit filename="/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/CMakeLists.txt">
+		<Unit filename="D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

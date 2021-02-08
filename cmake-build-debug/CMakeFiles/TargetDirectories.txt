@@ -1,3 +1,3 @@
-/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/Snake_cpp.dir
+D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/Snake_cpp.dir
+D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir

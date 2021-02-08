@@ -1,25 +1,22 @@
 #include <iostream>
 #include <string>
 #include <unistd.h>
-#include <ctime>
-#include "FieldBase.h"
+#include <vector>
+#include <ctime> // dont delete, needed, just bug is IDE
+#include "InnerSystem.cpp"
+#include "Field.h"
 #include "InputController.cpp"
 
 using namespace std;
 
 
 int main() {
-    cout << "Loading..." << endl;
-    FieldBase field;
+    Field field;
 
     while (true) {
         clear();
-        field.generate_apple();
-        field.output_field();
+        field.render();
         usleep(250000);
-        int direction = InputController::ask_input();
-        field.move(direction);
+        field.move(InputController::ask_input());
     }
-
-    return 0;
 }

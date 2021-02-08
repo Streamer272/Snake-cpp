@@ -1,4 +1,4 @@
-/home/daniel/CLion/clion-2020.3.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp
+"D:\Program Files (x86)\CLion\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Desktop\Coding\Else\C-family\C++\Projects\Snake-cpp
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/38a90096-bca6-47f2-b23a-3885f42bfa67/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug
+-- Build files have been written to: D:/Desktop/Coding/Else/C-family/C++/Projects/Snake-cpp/cmake-build-debug

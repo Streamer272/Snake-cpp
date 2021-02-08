@@ -1,1 +1,3 @@
-/usr/bin/c++  -g   CMakeFiles/Snake_cpp.dir/src/main.cpp.o CMakeFiles/Snake_cpp.dir/src/InputController.cpp.o  -o Snake_cpp 
+"D:\Program Files (x86)\CLion\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Snake_cpp.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\ar.exe cr CMakeFiles\Snake_cpp.dir/objects.a @CMakeFiles\Snake_cpp.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Snake_cpp.dir/objects.a -Wl,--no-whole-archive  -o Snake_cpp.exe -Wl,--out-implib,libSnake_cpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Snake_cpp.dir\linklibs.rsp

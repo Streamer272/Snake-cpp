@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Snake_cpp.dir/src/InputController.cpp.o"
-  "CMakeFiles/Snake_cpp.dir/src/main.cpp.o"
-  "Snake_cpp"
+  "CMakeFiles/Snake_cpp.dir/src/main.cpp.obj"
+  "Snake_cpp.exe"
+  "Snake_cpp.exe.manifest"
   "Snake_cpp.pdb"
+  "libSnake_cpp.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

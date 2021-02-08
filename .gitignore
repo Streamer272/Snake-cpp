@@ -1,5 +1,6 @@
 .vscode
 .vs
+.idea
 a.exe
 a.out
 src/a.exe
