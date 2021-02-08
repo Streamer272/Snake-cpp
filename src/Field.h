@@ -12,9 +12,6 @@ private:
     string tail_cell = "#";
     string apple_cell = "+";
 
-private:
-    mutable int m_direction = 3;
-
 public:
     int field_width = 16;
     int field_height = 8;
@@ -23,6 +20,7 @@ public:
 
 private:
     int snake_pos = ((field_height / 2) * field_width) + (field_width / 2);
+    mutable int m_direction = 3;
 
 public:
     int score = 0;
@@ -33,6 +31,7 @@ public:
     void render() const;
     void move(int direction);
     void generate_apple();
+    bool check_if_dead(int new_x_pos, int new_y_pos);
     tuple<int, int, int> get_pos_by_direction(int direction) const;
 };
 

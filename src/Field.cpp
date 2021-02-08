@@ -62,11 +62,15 @@ tuple<int, int, int> Field::get_pos_by_direction(int direction) const {
     return { new_x_pos, new_y_pos, (new_y_pos * field_width) + new_x_pos };
 }
 
+bool Field::check_if_dead(int new_x_pos, int new_y_pos) {
+    return new_x_pos < 0 || new_x_pos > (field_width - 1) || new_y_pos < 0 || new_y_pos > (field_height - 1)
+           || field[(new_y_pos * field_width) + new_x_pos] == tail_cell;
+}
+
 void Field::move(int direction) {
     auto [ new_x_pos, new_y_pos, new_pos ] = get_pos_by_direction(direction);
 
-    if (new_x_pos < 0 || new_x_pos > (field_width - 1) || new_y_pos < 0 || new_y_pos > (field_height - 1)
-            || field[new_pos] == tail_cell) {
+    if (check_if_dead(new_x_pos, new_y_pos)) {
         clear();
         playing = false;
     }

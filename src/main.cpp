@@ -2,7 +2,7 @@
 #include <string>
 #include <unistd.h>
 #include <tuple>
-#include <ctime> // dont delete, needed, just bug is IDE
+#include <ctime> // dont delete, needed, bug in IDE
 #include "InnerSystem.cpp"
 #include "Field.h"
 #include "InputController.cpp"
