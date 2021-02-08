@@ -36,10 +36,6 @@ void Field::move(int direction) {
         field[tail_po] = tail_cell;
     }
 
-    if (!apple_exists) {
-        generate_apple();
-    }
-
     int x_pos, y_pos;
     x_pos = snake_pos % field_width;
     y_pos = (snake_pos - x_pos) / field_width;
@@ -70,14 +66,12 @@ void Field::move(int direction) {
     if (new_x_pos < 0 || new_x_pos > (field_width - 1) || new_y_pos < 0 || new_y_pos > (field_height - 1)
             || field[new_pos] == tail_cell) {
         clear();
-        cout << "GAME OVER WITH SCORE " << score << endl;
-        system("pause");
-        exit(0);
+        playing = false;
     }
 
     if (field[new_pos] == apple_cell) {
         score += 1;
-        apple_exists = false;
+        generate_apple();
     }
 
     field[snake_pos] = empty_cell;
@@ -87,14 +81,11 @@ void Field::move(int direction) {
 }
 
 void Field::generate_apple() {
-    if (!apple_exists) {
-        int random_num;
+    int random_num;
 
-        do {
-            random_num = 0 + rand() % ((field_size + 1) - 0);
-        } while (field[random_num] != empty_cell);
+    do {
+        random_num = 0 + rand() % ((field_size + 1) - 0);
+    } while (field[random_num] != empty_cell);
 
-        field[random_num] = apple_cell;
-        apple_exists = true;
-    }
+    field[random_num] = apple_cell;
 }

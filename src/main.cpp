@@ -10,13 +10,24 @@
 using namespace std;
 
 
-int main() {
+void start() {
     Field field;
+    field.generate_apple();
 
-    while (true) {
+    while (field.playing) {
         clear();
         field.render();
         usleep(250000);
         field.move(InputController::ask_input());
+    }
+
+    cout << "GAME OVER WITH SCORE " << field.score << endl;
+    system("pause");
+}
+
+
+[[noreturn]] int main() {
+    while (true) {
+        start();
     }
 }

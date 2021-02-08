@@ -12,7 +12,6 @@ private:
     string tail_cell = "#";
     string apple_cell = "+";
     int m_direction = 3;
-    bool apple_exists = false;
     vector<int> tail_pos;
 public:
     int field_width = 16;
@@ -20,6 +19,7 @@ public:
     int field_size = field_width*field_height;
     string field[8*16] = {};
     int score = 0;
+    bool playing = true;
 
     Field();
     void render() const;
