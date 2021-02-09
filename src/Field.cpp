@@ -39,7 +39,7 @@ void Field::render() const {
     }
 }
 
-tuple<int, int, int> Field::get_pos_by_direction(int direction) const {
+void Field::get_pos_by_direction(int direction, int& m_new_x_pos, int& m_new_y_pos, int& m_new_pos) const {
     int x_pos, y_pos;
     x_pos = snake_pos % field_width;
     y_pos = (snake_pos - x_pos) / field_width;
@@ -67,7 +67,9 @@ tuple<int, int, int> Field::get_pos_by_direction(int direction) const {
 
     m_direction = direction;
 
-    return { new_x_pos, new_y_pos, (new_y_pos * field_width) + new_x_pos };
+    m_new_x_pos = new_x_pos;
+    m_new_y_pos = new_y_pos;
+    m_new_pos = (new_y_pos * field_width) + new_x_pos;
 }
 
 bool Field::check_if_dead(int new_x_pos, int new_y_pos) {
@@ -76,7 +78,10 @@ bool Field::check_if_dead(int new_x_pos, int new_y_pos) {
 }
 
 void Field::move(int direction) {
-    auto [ new_x_pos, new_y_pos, new_pos ] = get_pos_by_direction(direction);
+    int new_x_pos;
+    int new_y_pos;
+    int new_pos;
+    get_pos_by_direction(direction, new_x_pos, new_y_pos, new_pos);
 
     if (check_if_dead(new_x_pos, new_y_pos)) {
         clear();

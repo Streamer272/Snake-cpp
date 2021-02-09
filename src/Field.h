@@ -33,7 +33,7 @@ public:
     void move(int direction);
     void generate_apple();
     bool check_if_dead(int new_x_pos, int new_y_pos);
-    tuple<int, int, int> get_pos_by_direction(int direction) const;
+    void get_pos_by_direction(int direction, int& new_y_pos, int& new_x_pos, int& new_pos) const;
 };
 
 #include "Field.cpp"
