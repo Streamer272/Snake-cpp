@@ -73,8 +73,19 @@ void Field::get_pos_by_direction(int direction, int& m_new_x_pos, int& m_new_y_p
 }
 
 bool Field::check_if_dead(int new_x_pos, int new_y_pos) {
-    return new_x_pos < 0 || new_x_pos > (field_width - 1) || new_y_pos < 0 || new_y_pos > (field_height - 1)
-           || field[(new_y_pos * field_width) + new_x_pos] == tail_cell;
+    if (new_x_pos < 0 || new_x_pos > (field_width - 1) || new_y_pos < 0 || new_y_pos > (field_height - 1)) {
+        return true;
+    }
+
+    int new_pos = (new_y_pos * field_width) + new_x_pos;
+
+    for (int i = 0; i < score; i++) {
+        if (all_snake_pos[i] == new_pos) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 void Field::move(int direction) {
