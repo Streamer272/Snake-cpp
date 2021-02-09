@@ -13,6 +13,10 @@ Field::Field() {
 }
 
 void Field::render() const {
+    for (int i = 0; i < score; i++) {
+        field[all_snake_pos[i]] = tail_cell;
+    }
+
     for (int i = 0; i < field_width*1.1; i++) {
         cout << floor_cell;
     }
@@ -28,6 +32,10 @@ void Field::render() const {
 
     for (int i = 0; i < field_width*1.1; i++) {
         cout << floor_cell;
+    }
+
+    for (int i = 0; i < score; i++) {
+        field[all_snake_pos[i]] = empty_cell;
     }
 }
 
@@ -80,6 +88,7 @@ void Field::move(int direction) {
         generate_apple();
     }
 
+    all_snake_pos.insert(all_snake_pos.begin(), snake_pos);
     field[snake_pos] = empty_cell;
     field[new_pos] = snake_cell;
     snake_pos = new_pos;

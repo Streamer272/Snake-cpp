@@ -16,11 +16,12 @@ public:
     int field_width = 16;
     int field_height = 8;
     int field_size = field_width*field_height;
-    string field[8*16] = {};
+    mutable string field[8*16] = {};
 
 private:
     int snake_pos = ((field_height / 2) * field_width) + (field_width / 2);
     mutable int m_direction = 3;
+    vector<int> all_snake_pos;
 
 public:
     int score = 0;
