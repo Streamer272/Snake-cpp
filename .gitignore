@@ -2,7 +2,5 @@
 .vs
 .idea
 a.exe
-a.out
 src/a.exe
-src/a.out
 src/main.exe

@@ -12,33 +12,6 @@ Field::Field() {
     srand(time(nullptr));
 }
 
-void Field::render() const {
-    for (int i = 0; i < score; i++) {
-        field[all_snake_pos[i]] = tail_cell;
-    }
-
-    for (int i = 0; i < field_width*1.1; i++) {
-        cout << floor_cell;
-    }
-    cout << endl;
-
-    for (int i = 0; i < field_height; i++) {
-        cout << wall_cell;
-        for (int x = 0; x < field_width; x++) {
-            cout << field[(field_width*i)+x];
-        }
-        cout << wall_cell << endl;
-    }
-
-    for (int i = 0; i < field_width*1.1; i++) {
-        cout << floor_cell;
-    }
-
-    for (int i = 0; i < score; i++) {
-        field[all_snake_pos[i]] = empty_cell;
-    }
-}
-
 void Field::get_pos_by_direction(int direction, int& m_new_x_pos, int& m_new_y_pos, int& m_new_pos) const {
     int x_pos, y_pos;
     x_pos = snake_pos % field_width;
@@ -80,7 +53,7 @@ bool Field::check_if_dead(int new_x_pos, int new_y_pos) {
     int new_pos = (new_y_pos * field_width) + new_x_pos;
 
     for (int i = 0; i < score; i++) {
-        if (all_snake_pos[i] == new_pos) {
+        if (tail_pos[i] == new_pos) {
             return true;
         }
     }
@@ -88,7 +61,31 @@ bool Field::check_if_dead(int new_x_pos, int new_y_pos) {
     return false;
 }
 
+
+void Field::render() const {
+    for (int i = 0; i < field_width*1.1; i++) {
+        cout << floor_cell;
+    }
+    cout << endl;
+
+    for (int i = 0; i < field_height; i++) {
+        cout << wall_cell;
+        for (int x = 0; x < field_width; x++) {
+            cout << field[(field_width*i)+x];
+        }
+        cout << wall_cell << endl;
+    }
+
+    for (int i = 0; i < field_width*1.1; i++) {
+        cout << floor_cell;
+    }
+}
+
 void Field::move(int direction) {
+    for (int i = 0; i < score; i++) {
+        field[tail_pos[i]] = empty_cell;
+    }
+
     int new_x_pos;
     int new_y_pos;
     int new_pos;
@@ -104,10 +101,18 @@ void Field::move(int direction) {
         generate_apple();
     }
 
-    all_snake_pos.insert(all_snake_pos.begin(), snake_pos);
+    tail_pos.insert(tail_pos.begin(), snake_pos);
     field[snake_pos] = empty_cell;
     field[new_pos] = snake_cell;
     snake_pos = new_pos;
+
+    for (int i = 0; i < score; i++) {
+        field[tail_pos[i]] = tail_cell;
+    }
+
+    while (tail_pos.size() > (score + 1)) {
+        tail_pos.pop_back();
+    }
 }
 
 void Field::generate_apple() {

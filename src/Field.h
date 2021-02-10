@@ -21,7 +21,7 @@ public:
 private:
     int snake_pos = ((field_height / 2) * field_width) + (field_width / 2);
     mutable int m_direction = 3;
-    vector<int> all_snake_pos;
+    vector<int> tail_pos;
 
 public:
     int score = 0;
@@ -33,7 +33,7 @@ public:
     void move(int direction);
     void generate_apple();
     bool check_if_dead(int new_x_pos, int new_y_pos);
-    void get_pos_by_direction(int direction, int& new_y_pos, int& new_x_pos, int& new_pos) const;
+    void get_pos_by_direction(int direction, int& m_new_x_pos, int& m_new_y_pos, int& new_pos) const;
 };
 
 #include "Field.cpp"
